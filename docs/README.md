@@ -12,20 +12,20 @@
   
   **Примеры ввода, вывода**:
   
-  def area(1)
   ```
+  def area(1)
   ~3.14
   ```
-  def area(2)
   ```
+  def area(2)
   12.56
   ```
-  def perimeter(4)
   ```
-   ~25.12
+  def perimeter(4)
+  ~25.12
+  ```
   ```
   def perimeter(5)
-  ```
   ~31.4
   ```
 ### rectangle.py
@@ -34,21 +34,20 @@
 
   **Примеры ввода, вывода**:
 
-  def area(3,4)
   ```
+  def area(3,4)
   12
   ```
-  def area(5,1)
   ```
+  def area(5,1)
   5
   ```
-
-  def perimeter(3,4)
   ```
+  def perimeter(3,4)
   14
   ```
-  def perimeter(5,1)
   ```
+  def perimeter(5,1)
   12
   ```
 ### square.py
@@ -57,21 +56,20 @@
 
     **Примеры ввода, вывода**:
 
-  def area(3)
   ```
+  def area(3)
   9
   ```
-  def area(5)
   ```
+  def area(5)  
   25
   ```
-
-  def perimeter(3)
   ```
+  def perimeter(3)
   12
   ```
-  def perimeter(5)
   ```
+  def perimeter(5)
   20
   ```
 
@@ -82,21 +80,20 @@
   
   **Примеры ввода, вывода**:
 
-  def area(3,4)
   ```
+  def area(3,4)
   6
   ```
-  def area(7,8)
   ```
+  def area(7,8)
   28
   ```
-
-  def perimeter(3,4,5)
   ```
+  def perimeter(3,4,5)
   12
   ```
-  def perimeter(1,2,3)
   ```
+  def perimeter(1,2,3)
   6
   ```
   
