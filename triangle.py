@@ -5,7 +5,7 @@ def area(a,h):
     return a * h / 2
 
 def perimeter(a,b,c):
-    if a <= 0 or b <= 0 or c <= 0:
-        return -1
     '''Принимает положительные a,b,c стороны треугольника, возвращает периметр треугольника'''
+    if a <= 0 or b <= 0 or c <= 0 or a+b <= c or b+c <= a or a+c <= b:
+        return -1
     return a + b + c
