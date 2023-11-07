@@ -90,6 +90,11 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(triangle.area(2,-1), -1)
         self.assertEqual(triangle.area(0, 0), -1)
 
+    def test_correct_triangle(self):
+        self.assertEqual(triangle.perimeter(1,1,3),-1)
+        self.assertEqual(triangle.perimeter(1, 3, 1), -1)
+        self.assertEqual(triangle.perimeter(3, 1, 1), -1)
+
 
 if __name__ == '__main__':
     unittest.main()
