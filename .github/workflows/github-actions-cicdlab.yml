@@ -3,9 +3,11 @@ name: CICDlab
 on: [push]
 jobs:
 
-  CICDlab-try-tests:
+  CICDlab-try-tests-ubuntu:
     runs-on: ubuntu-latest
     steps:
+      - name: try-to-echo
+      - run: echo "This is 5lab unittests on latest ubunty, py3.10
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
@@ -14,8 +16,23 @@ jobs:
           architecture: "x64"
         env:
           AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
-      - name: Display Python version
-        run: python -c "import sys; print(sys.version)"
+      - name: Test with unittests
+        run:
+          python -m tests
+
+  CICDlab-try-tests-windows:
+    runs-on: Windows-latest
+    steps:
+      - name: try-to-echo
+      - run: echo "This is 5lab unittests on Windows, py3.10
+      - uses: actions/checkout@v3
+      - name: Set up Python 3.10
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.10"
+          architecture: "x64"
+        env:
+          AGENT_TOOLSDIRECTORY: /opt/hostedtoolcache
       - name: Test with unittests
         run:
           python -m tests
