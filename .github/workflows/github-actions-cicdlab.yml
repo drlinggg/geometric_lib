@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: try-to-echo
-        run: echo "This is 5lab unittests on latest ubunty, py3.10"
+        run: echo "These are 5lab unittests on latest ubunty, py3.10"
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
@@ -24,7 +24,7 @@ jobs:
     runs-on: Windows-latest
     steps:
       - name: try-to-echo
-        run: echo "This is 5lab unittests on Windows, py3.10"
+        run: echo "These are 5lab unittests on Windows, py3.10"
       - uses: actions/checkout@v3
       - name: Set up Python 3.10
         uses: actions/setup-python@v3
